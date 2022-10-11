@@ -1,3 +1,3 @@
 # Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9a4b60a4-951c-4469-9454-c62a7d738eb5/deploy-status)](https://app.netlify.com/sites/startupohrid/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e37e879-af1b-4ca4-9166-a76598ca6b2e/deploy-status)](https://app.netlify.com/sites/startupohrid/deploys)
