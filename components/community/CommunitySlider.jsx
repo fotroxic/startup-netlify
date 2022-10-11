@@ -42,7 +42,7 @@ export default class CommunitySlider extends Component {
   <div className="App">
     <Carousel breakPoints={breakPoints}>
     {this.state.jobs.map(jobs =>
-      <Item className="news__block">
+      <Item className="news__block" key={jobs.id}>
       <div className="member">
     <div className="member__img">    <img key={jobs.id} src={jobs.memberImg} alt="" /></div>
             <div className="member__info">

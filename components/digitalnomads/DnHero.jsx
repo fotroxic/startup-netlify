@@ -8,7 +8,7 @@ export default function DnHero() {
             <div className="dn__details">
            <Link href='#'><h3>Digital Nomads</h3></Link>
             <h2>Keeping the atmosphere lively with another
-                Locals'n'Nomads!
+                LocalsnNomads!
             </h2>
             <div className="dn__creator">
                 <img src="#" alt="" />

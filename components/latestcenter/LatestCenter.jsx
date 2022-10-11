@@ -406,7 +406,7 @@ const LatestCenter = () => {
                 <div className="right-block">
                     <h2>Download your e-book </h2>
                     <div className="right-desc">
-                    This eBook showcases our local tech community by shortly presenting each community player. Through this eBook, you will get to know what Split's tech ecosystem has to offer. 
+                    This eBook showcases our local tech community by shortly presenting each community player. Through this eBook, you will get to know what Splits tech ecosystem has to offer. 
                     </div>
                     <button type='button'> Download e-book </button>
                     

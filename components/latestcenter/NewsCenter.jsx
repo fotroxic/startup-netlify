@@ -19,7 +19,7 @@ const LatestBelow = () => {
             {slice.map((item,index)=>{
 
 return(
-<div className="left-block">
+<div className="left-block" key={item.id}>
     <div className="left-img">
         <img src={item.img} alt="" />
     </div>

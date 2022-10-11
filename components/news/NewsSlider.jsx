@@ -39,7 +39,7 @@ render(){
          <h1 style={{ textAlign: "center" }}>News & Events </h1>
       <div className="App">
         <Carousel breakPoints={breakPoints}>
-          {this.state.content.map(content =><Link href={`/news/${content.link}`}><Item className="news__block" key={content.id} style={{backgroundImage: `url(${content.contentImg})`}} >
+          {this.state.content.map(content =><Link key={content.id} href={`/news/${content.link}`}><Item className="news__block" key={content.id} style={{backgroundImage: `url(${content.contentImg})`}} >
         <h3 key={content.id}>{content.title}</h3></Item></Link>
           )}
   
