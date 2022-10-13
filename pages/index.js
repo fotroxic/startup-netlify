@@ -7,9 +7,9 @@ import Tv from "../components/tv/Tv";
 import SecondBanner from "../components/secondbanner/SecondBanner"
 import Community from "../components/community/Community";
 import Jobs from "../components/jobs/Jobs";
-import Footer from "../components/footer/Footer";
 import NewsSlider from "../components/news/NewsSlider";
 import CommunitySlider from "../components/community/CommunitySlider";
+
 
 
 export default function Home() {
