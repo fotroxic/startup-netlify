@@ -1,0 +1,101 @@
+{"news":[
+    {
+        "id":1,
+        "newsImg": "https://i0.wp.com/en.split-techcity.com/wp-content/uploads/sites/2/2021/07/1-scaled.jpg?resize=400%2C230&ssl=1",
+        "category":"News Category",
+        "newsTitle": "Integrit Tech Comp",
+        "newsDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
+        "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
+        "newsCreator" : "Split Tech City"
+    },
+    {
+        "id":2,
+        "newsImg": "https://i0.wp.com/en.split-techcity.com/wp-content/uploads/sites/2/2021/07/1-scaled.jpg?resize=400%2C230&ssl=1",
+        "category":"News Category",
+        "newsTitle": "Split Founders: Ante Dagelic",
+        "newsDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
+        "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
+        "newsCreator" : "Split Tech City"
+    },
+    {
+        "id":3,
+        "newsImg": "https://i0.wp.com/en.split-techcity.com/wp-content/uploads/sites/2/2021/07/1-scaled.jpg?resize=400%2C230&ssl=1",
+        "category":"News Category",
+        "newsTitle": "Split Founders: Ante Dagelic",
+        "newsDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
+        "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
+        "newsCreator" : "Split Tech City"
+    },
+    {
+        "id":4,
+        "newsImg": "https://i0.wp.com/en.split-techcity.com/wp-content/uploads/sites/2/2021/07/1-scaled.jpg?resize=400%2C230&ssl=1",
+        "category":"News Category",
+        "newsTitle": "Split Founders: Ante Dagelic",
+        "newsDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
+        "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
+        "newsCreator" : "Split Tech City"
+    },
+    {
+        "id":5,
+        "newsImg": "https://i0.wp.com/en.split-techcity.com/wp-content/uploads/sites/2/2021/07/1-scaled.jpg?resize=400%2C230&ssl=1",
+        "category":"News Category",
+        "newsTitle": "Split Founders: Ante Dagelic",
+        "newsDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
+        "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
+        "newsCreator" : "Split Tech City"
+    },
+    {
+        "id":6,
+        "newsImg": "https://i0.wp.com/en.split-techcity.com/wp-content/uploads/sites/2/2021/07/1-scaled.jpg?resize=400%2C230&ssl=1",
+        "category":"News Category",
+        "newsTitle": "Split Founders: Ante Dagelic",
+        "newsDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
+        "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
+        "newsCreator" : "Split Tech City"
+    }
+],
+"content":[
+    {
+        "id":1,
+        "link": "world-economy",
+        "title":"World Economy",
+        "contentImg": "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":2,
+        "link": "inovation",
+        "title":"Inovation",
+        "contentImg": "https://images.unsplash.com/photo-1661710782009-c06cbf60cda7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":3,
+        "link": "big-news",
+        "title":"Big News",
+        "contentImg": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":4,
+        "link": "technology",
+        "title":"Technology",
+        "contentImg": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":5,
+        "link": "newsletter",
+        "title":"Newsletter",
+        "contentImg": "https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":6,
+        "link": "technology",
+        "title":"Technology",
+        "contentImg": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":7,
+        "link": "technology",
+        "title":"Technology",
+        "contentImg": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+]
+}
