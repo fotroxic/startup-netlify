@@ -1,27 +1,11 @@
 import axios from 'axios'
 import React, {Component} from "react";
 import Link from "next/link";
+import posts from '../../database/db.json'
 
-
-const api = axios.create({
-    baseURL: 'http://localhost:800/news'
-  })
 
 
   export default class NewsBelow extends Component{
-    state = {
-        news:[]
-      }
-  
-      constructor() {
-        super();
-        api.get('/').then(res =>
-          {
-              console.log(res.data)
-              this.setState({news:res.data})          
-          })
-      }
-
 
     render(){
   return (
@@ -29,7 +13,7 @@ const api = axios.create({
   
   
     <div className="lb-box">
-    {this.state.news.map(news=>
+    {posts.news.map(news=>
     <div className="lb-block" key={news.id}>
                 <div className="lb-img">
                     <img src={news.newsImg} alt="" />

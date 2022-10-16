@@ -16,7 +16,6 @@ import '../styles/latestbelow.css'
 import '../styles/latestcenter.css'
 import '../styles/latest.css'
 import '../styles/communityPage.css'
-import { useEffect } from 'react'
 import { LayoutGroup } from 'framer-motion'
 import DarkModeSwitch from '../components/header/DarkModeSwitch.jsx'
 import Footer from '../components/footer/Footer'
@@ -30,9 +29,7 @@ import '../styles/contact.css'
 
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    import('bootstrap')
-  }, [])
+
   return <>
   <LayoutGroup>
  <ChakraProvider>

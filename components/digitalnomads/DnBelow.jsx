@@ -1,27 +1,11 @@
 import axios from 'axios'
 import React, {Component} from "react";
 import Link from "next/link";
+import posts from '../../database/db.json'
 
-
-const api = axios.create({
-    baseURL: 'http://localhost:800/dn'
-  })
 
 
   export default class DnBelow extends Component{
-    state = {
-        dn:[]
-      }
-  
-      constructor() {
-        super();
-        api.get('/').then(res =>
-          {
-              console.log(res.data)
-              this.setState({dn:res.data})          
-          })
-      }
-
 
     render(){
   return (
@@ -29,7 +13,7 @@ const api = axios.create({
   
   
     <div className="lb-box">
-    {this.state.dn.map(dn=>
+    {posts.dn.map(dn=>
     <div className="lb-block" key={dn.id}>
                 <div className="lb-img">
                     <img src={dn.dnImg} alt="" />

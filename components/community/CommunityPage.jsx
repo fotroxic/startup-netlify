@@ -1,23 +1,13 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import Item from "./Item";
 import Link from "next/link";
 import RightSticky from "../latestcenter/RightSticky";
+import posts from '../../database/db.json'
 
 const App = () => {
   const [data, setData] = useState([]);
   const [load, setLoad] = useState(4);
   const [flag,setFlag]=useState(true)
-
-  const getData = async () => {
-    const res = await axios.get("http://localhost:800/jobs");
-    console.log("fetched")
-
-    setData(res.data);
-  };
-  useEffect(() => {
-    getData();
-  }, [])
 
   const loadData = () => {
     setLoad((prev) => prev + 4)
@@ -38,7 +28,7 @@ const App = () => {
       <div className="comunity__content">
         
       <div className="community__items__container">
-      {data.slice(0, load).map((jobs, index) => {
+      {posts.jobs.slice(0, load).map((jobs, index) => {
         
           return (
             <div key={index}>

@@ -1,13 +1,9 @@
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import Link from "next/link";
-import axios from "axios";
+import posts from '../../database/db.json'
 import React, {Component} from "react";
 
-
-const api = axios.create({
-  baseURL: 'http://localhost:800/jobs'
-})
 
 
 const breakPoints = [
@@ -20,18 +16,6 @@ const breakPoints = [
 
 export default class CommunitySlider extends Component {
 
-  state = {
-    jobs:[]
-  }
-
-  constructor() {
-    super();
-    api.get('/').then(res =>
-      {
-          console.log(res.data)
-          this.setState({jobs:res.data})          
-      })
-  }
 
 
   render(){
@@ -41,7 +25,7 @@ export default class CommunitySlider extends Component {
      <h1 style={{ textAlign: "center" }}>Community </h1>
   <div className="App">
     <Carousel breakPoints={breakPoints}>
-    {this.state.jobs.map(jobs =>
+    {posts.jobs.map(jobs =>
       <Item className="news__block" key={jobs.id}>
       <div className="member">
     <div className="member__img">    <img key={jobs.id} src={jobs.memberImg} alt="" /></div>

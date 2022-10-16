@@ -2,21 +2,13 @@ import axios from 'axios'
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import RightSticky from '../latestcenter/RightSticky';
-
+import posts from '../../database/db.json'
 
   const  Jobs =()=> {
     const [data, setData] = useState([]);
     const [load, setLoad] = useState(4);
     const [flag,setFlag]=useState(true)
     
-    const getData = async () => {
-        const res = await axios.get("http://localhost:800/jobs");
-        console.log("fetched")
-    setData(res.data);
-  };
-  useEffect(() => {
-    getData();
-  }, [])
 
   const loadData = () => {
     setLoad((prev) => prev + 4)
@@ -27,7 +19,7 @@ import RightSticky from '../latestcenter/RightSticky';
             <div className='jobs__page'>
                 <div className='jobs__page__container'>
                 <div className='block__container'>
-                {data.slice(0, load).map((jobs, index) => {
+                {posts.jobs.slice(0, load).map((jobs, index) => {
                     return ( 
                     <div className='jobs__page__block' key={index}>
                         <div className='jobs__lb'>

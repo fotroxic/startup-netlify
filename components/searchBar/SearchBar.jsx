@@ -1,18 +1,18 @@
-import axios from 'axios'
+
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
-
+import posts from '../../database/db.json'
 
 export default function SearchBar() {
     const [users,setUsers] = useState ([])
     const [text,setText] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     useEffect (() => {
-        const loadUsers =async()=>
+        const loadUsers =()=>
         {
-            const response = await axios.get('http://localhost:800/jobs');
-            setUsers(response.data)
-            console.log(response.data)
+          
+            setUsers(posts.jobs.data)
+        
         }
             loadUsers();
             

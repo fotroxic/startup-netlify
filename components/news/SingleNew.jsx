@@ -1,13 +1,9 @@
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import Link from "next/link";
-import axios from "axios";
+import posts from "../../database/db.json"
 import React, {Component} from "react";
 
-
-const api = axios.create({
-  baseURL: 'http://localhost:800/content'
-})
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -18,19 +14,6 @@ const breakPoints = [
 
 export default class SingleNew extends Component {
 
-    state = {
-      content:[]
-    }
-
-    constructor() {
-      super();
-      api.get('/').then(res =>
-        {
-            console.log(res.data)
-            this.setState({content:res.data})          
-        })
-    }
-
 render(){
   return (
     <>
@@ -40,7 +23,7 @@ render(){
       <div className="App">
         <Carousel breakPoints={breakPoints}>
          
-          {this.state.content.map(content =><Link key={content.id} href={`/news/${content.link}`}><Item className="news__block" key={content.id} style={{backgroundImage: `url(${content.contentImg})`}} >
+          {posts.content.map(content =><Link key={content.id} href={`/news/${content.link}`}><Item className="news__block" key={content.id} style={{backgroundImage: `url(${content.contentImg})`}} >
         <h3 key={content.id}>{content.title}</h3></Item></Link>
           )}
   

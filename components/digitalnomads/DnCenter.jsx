@@ -1,27 +1,10 @@
-import axios from 'axios'
+
 import React, {Component} from "react";
-import Link from "next/link";
 import RightSticky from '../latestcenter/RightSticky';
-
-
-const api = axios.create({
-    baseURL: 'http://localhost:800/dn'
-  })
+import posts from '../../database/db.json'
 
 export default class DnCenter extends Component{
 
-    state = {
-        dn:[]
-      }
-  
-      constructor() {
-        super();
-        api.get('/').then(res =>
-          {
-              console.log(res.data)
-              this.setState({dn:res.data})          
-          })
-      }
 
 render(){
   return (
@@ -29,7 +12,7 @@ render(){
     <div className='latest-center'>
         <div className="center-container">
             <div className="left-container">
-             {this.state.dn.map(dn=>
+             {posts.dn.map(dn=>
                 
                 <div className="left-block" key={dn.id}>
                 <div className="left-img">
